@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard HTML CSS</title>
+    <link rel="shortcut icon" href="dashboard-icon-3.png" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+          <li class="active">
+            <a href="#">
+              <i class="bx bxs-dashboard"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxs-user"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-line-chart-down"></i>
+              <span>Statistics</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxs-briefcase"></i>
+              <span>Careers</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-question-mark"></i>
+              <span>FAQ</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxs-star"></i>
+              <span>Testimonials</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxs-cog"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="logout">
+            <a href="#">
+              <i class="bx bx-log-out"></i>
+              <span>Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main--content">
+        <div class="header--wrapper">
+          <div class="header-title">
+            <span>Primary</span>
+            <h1>Dashboard</h1>
+          </div>
+          <div class="user--info">
+            <div class="search--box">
+              <i class="bx bx-search"></i>
+              <input type="text" placeholder="Search" />
+            </div>
+            <img src="./dashboard-icon-3.png" alt="" />
+          </div>
+        </div>
+        <div class="card--container">
+          <h2 class="main--title">Today's Data</h2>
+          <div class="card--wrapper">
+            <div class="payment-card light-red">
+              <div class="card-header">
+                <div class="amount">
+                  <span class="title"> Payment amount </span>
+                  <span class="amount-value"> $489.89 </span>
+                </div>
+                <i class="bx bx-dollar icon"></i>
+              </div>
+              <span class="card-detail">**** **** **** 3429</span>
+            </div>
+
+            <div class="payment-card light-purple">
+              <div class="card-header">
+                <div class="amount">
+                  <span class="title"> Payment order </span>
+                  <span class="amount-value"> $182.33 </span>
+                </div>
+                <i class="bx bx-list-ul icon dark-purple"></i>
+              </div>
+              <span class="card-detail">**** **** **** 6359</span>
+            </div>
+
+            <div class="payment-card light-green">
+              <div class="card-header">
+                <div class="amount">
+                  <span class="title"> Payment Customer </span>
+                  <span class="amount-value"> $203.33 </span>
+                </div>
+                <i class="bx bx-user icon dark-green"></i>
+              </div>
+              <span class="card-detail">**** **** **** 7184</span>
+            </div>
+
+            <div class="payment-card light-blue">
+              <div class="card-header">
+                <div class="amount">
+                  <span class="title"> Payment procced </span>
+                  <span class="amount-value"> $82.93 </span>
+                </div>
+                <i class="bx bx-check icon dark-blue"></i>
+              </div>
+              <span class="card-detail">**** **** **** 8209</span>
+            </div>
+          </div>
+        </div>
+        <div class="tabuler--wrapper">
+          <h3 class="main--title">Finance data</h3>
+          <div class="table--container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Transaction Type</th>
+                  <th>Description</th>
+                  <th>Amount</th>
+                  <th>Category</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2023-07-05</td>
+                  <td>Expenses</td>
+                  <td>Office Suplies</td>
+                  <td>$23.56</td>
+                  <td>Office Expenses</td>
+                  <td>Panding</td>
+                  <td><button>Edit</button></td>
+                </tr>
+
+                  <tr>
+                  <td>2023-10-13</td>
+                  <td>Income</td>
+                  <td>Client Payment</td>
+                  <td>$56.56</td>
+                  <td>Sales</td>
+                  <td>Completed</td>
+                  <td><button>Edit</button></td>
+                </tr>  <tr>
+                  <td>2023-09-15</td>
+                  <td>Expenses</td>
+                  <td>Travel Expenses</td>
+                  <td>$213.56</td>
+                  <td>Travel</td>
+                  <td>Panding</td>
+                  <td><button>Edit</button></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="7">Total : $12,780.45</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
